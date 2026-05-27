@@ -41,6 +41,7 @@ def main():
     parser.add_argument("--top_k", type=int, default=20, help="Top-k sampling value.")
     parser.add_argument("--top_p", type=float, default=0.8, help="Top-p sampling value.")
     parser.add_argument("--max_new_tokens", type=int, default=40, help="Max new tokens to generate.")
+    parser.add_argument("--model_folder", type=str, help="Folder name for storing model outputs and evaluation results.")
     
     args = parser.parse_args()
     runner = Run()
